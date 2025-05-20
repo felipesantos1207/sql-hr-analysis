@@ -26,12 +26,3 @@ Source: Public dataset adapted for SQL learning purposes.
 - Google Cloud Console  
 - GitHub for version control  
 
-## 📌 Key Queries
-
-### 🔎 Employees hired before 2020
-```sql
-SELECT *
-FROM employees
-WHERE hire_date < '2020-01-01';
-
-A mini-project to demonstrate SQL skills in an HR scenario. Designed for portfolio development and practice.
