@@ -1,32 +1,37 @@
-# 🧑‍💼 SQL HR Analysis Project
 
-This project explores a fictional employee dataset using SQL to extract insights that simulate real HR business questions.
+# 📊 HR Data Analysis with SQL
 
-## 🧠 Questions Answered
-
-- What is the average salary by department?
-- Which employees were hired before 2020?
-- What department has the highest total salary cost?
-- Who are the most recently hired employees?
-- How many employees are in each department?
+This project aims to explore and analyze Human Resources data using SQL in Google BigQuery. Through SQL queries, we extract meaningful insights to support decision-making in areas like hiring, salaries, and employee tenure.
 
 ## 📁 Dataset
 
-- File: `employees.csv`
-- Fields: employee_id, name, department, salary, hire_date
+The dataset simulates a real-world HR scenario and includes information about:
+- Employees
+- Departments
+- Salaries
+- Job titles
 
-## 🛠 Skills Used
+Source: Public dataset adapted for SQL learning purposes.
 
-- SELECT, WHERE, ORDER BY  
-- GROUP BY, HAVING  
-- Aggregation (AVG, COUNT, SUM)  
-- Date filters with WHERE and comparison
+## 🧠 Objectives
 
-## 💻 Tools
+- List employees hired before 2020  
+- Calculate the total salary by department  
+- Identify job titles with the highest average salary  
+- Count how many employees each manager supervises  
 
-- Google BigQuery (or any SQL engine)
-- GitHub for code and version control
+## 🛠️ Tools Used
 
-## ✅ Outcome
+- SQL (Google BigQuery)  
+- Google Cloud Console  
+- GitHub for version control  
+
+## 📌 Key Queries
+
+### 🔎 Employees hired before 2020
+```sql
+SELECT *
+FROM employees
+WHERE hire_date < '2020-01-01';
 
 A mini-project to demonstrate SQL skills in an HR scenario. Designed for portfolio development and practice.
